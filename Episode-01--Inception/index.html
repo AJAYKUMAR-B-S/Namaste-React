@@ -6,6 +6,12 @@
     <title>Namaste-React</title>
   </head>
   <body>
-    Hello World
+    <div id="root"></div>
   </body>
+  <script>
+    const rootElement = document.getElementById("root");
+    const createElement = document.createElement("h1");
+    createElement.innerHTML = "Hello World";
+    rootElement.appendChild(createElement);
+  </script>
 </html>
