@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 {
   /* <div class="parentDiv">
   <div class="childDiv1">
