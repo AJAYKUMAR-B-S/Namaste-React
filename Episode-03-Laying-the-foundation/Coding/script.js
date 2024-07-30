@@ -1,19 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//Revising the Episode-01 concepts
-
-const heading = React.createElement("h2", { id: "heading" }, "This is H2");
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// root.render(heading);
-
-console.log(heading); //It  returns the Object
-
 //JSX is HTML like Syntax
-const jsxHeading = <h2 id="heading">This is h2 by JSX</h2>;
+// JSX  => Parcel => babel => react.CreateElement => React.Element => JS object => HTMl Element
+const jsxHeading = (
+  <h2 className="Heading" tabIndex="10">
+    This is h2 by JSX
+  </h2>
+);
 
-root.render(jsxHeading); //It also returns the Object
+root.render(jsxHeading); //It  returns an Object
 
 console.log(jsxHeading);
