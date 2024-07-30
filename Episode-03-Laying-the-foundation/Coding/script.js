@@ -78,14 +78,22 @@ const footerDiv = (
 // Creating a infinite loop using Component And React Element
 
 const CardContainer = () => {
-  return <div className="card-Container">{card}</div>;
+  return (
+    <div className="card-Container">
+      <h1>This is card Container</h1>
+    </div>
+  );
 };
 
-const card = (
-  <div className="div">
-    <h4>This is h4</h4>
-    <CardContainer />
-  </div>
-);
+const Card = () => {
+  return (
+    <div className="div">
+      <h4>This is h4</h4>
+      <CardContainer />
+      <CardContainer></CardContainer>
+      {CardContainer()}
+    </div>
+  );
+};
 
-root.render();
+root.render(<Card />);
