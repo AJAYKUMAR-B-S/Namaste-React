@@ -53,4 +53,26 @@ const Header = () => {
     </div>
   );
 };
-root.render(<Header />);
+
+const h3heading = <h3>This is H3 by Functional Component</h3>;
+
+//Adding Function Component inside the React Element
+const Footer = () => {
+  return (
+    <div className="div">
+      {h3heading}
+      {console.log("Hello world!")}
+      <h2 className="h2"> This is H2 by Component Composition</h2>
+    </div>
+  );
+};
+
+// Calling Functional Component  inside the React Element
+const footerDiv = (
+  <div>
+    <h1>This is H1 by Component Composition</h1>
+    <Footer />
+  </div>
+);
+
+root.render(footerDiv);
