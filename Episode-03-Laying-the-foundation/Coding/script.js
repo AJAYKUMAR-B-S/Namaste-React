@@ -41,13 +41,14 @@ const Heading3 = () => {
 
 // Component Composition
 
-const H1heading = () => {
-  return <h1>This is H1 by Component Composition</h1>;
-};
+const H1heading = <h1>This is H1 by Component Composition</h1>; //This is React Element
+
+// Calling React Element inside the Function Component
 const Header = () => {
   return (
     <div className="div">
-      <H1heading />
+      {H1heading}
+      {console.log("Hello world!")}
       <h2 className="h2"> This is H2 by Component Composition</h2>
     </div>
   );
