@@ -49,11 +49,56 @@ const Header = () => {
   );
 };
 
+const Restaurantcard = () => {
+  return (
+    <div className="restaurant_Card">
+      <div className="restaurant_Card_Img_Container">
+        <img
+          alt="recipe_Img"
+          className="recipeImage"
+          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2024/4/19/03972ff7-ca47-4b34-a777-bec55c47869e_8944b667-7b9c-418b-88f3-df885ddadd6b.jpg"
+        />
+      </div>
+      <div className="restaurant_Card_Details_Container">
+        <h2>Burger king</h2>
+        <p>Rating: 4.5</p>
+        <p>Average Cost: Rs. 150</p>
+        <p>burgers, American Mehdipatnam</p>
+      </div>
+    </div>
+  );
+};
+
+const Main = () => {
+  return (
+    <main className="main">
+      <div className="search_Container">
+        <span>Search : </span>
+        <input type="text" placeholder="Search for food" />
+      </div>
+      <div className="restaurants_Card_Container">
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+        <Restaurantcard />
+      </div>
+    </main>
+  );
+};
+
 //App Component
 const App = () => {
   return (
     <div className="app_layout">
       <Header />
+      <Main />
     </div>
   );
 };

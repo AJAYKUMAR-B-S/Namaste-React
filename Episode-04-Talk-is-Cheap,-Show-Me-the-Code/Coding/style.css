@@ -12,12 +12,14 @@ body {
   width: 100%;
   font-family: "Lato", sans-serif;
 }
+
+/* Header css */
 .header {
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  box-shadow: 1px 1px 8px -3px #000;
 }
 .logo_Container {
   width: 5.5rem;
@@ -36,8 +38,46 @@ body {
 }
 
 .nav_Container_Ul > li {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
   text-transform: capitalize;
+}
+
+/* Main CSS */
+.main,
+.restaurants_Card_Container {
+  padding: 2rem 2rem;
+}
+.restaurants_Card_Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+}
+.restaurant_Card {
+  width: 15rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 8px -3px #b7b3b3;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.restaurant_Card_Img_Container {
+  box-shadow: 0 1px 1px -2px rgba(0, 0, 0, 0.1);
+}
+.recipeImage {
+  width: 90%;
+}
+.restaurant_Card_Details_Container {
+  display: grid;
+  gap: 0.2rem;
+  padding: 1rem;
+}
+.restaurant_Card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 7px -1px rgba(0, 0, 0, 0.3);
 }
