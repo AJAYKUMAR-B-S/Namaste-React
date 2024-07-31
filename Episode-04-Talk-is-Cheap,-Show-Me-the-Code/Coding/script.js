@@ -1,99 +1,61 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// Headers
+//   website logo
+//    Nav Bar
+//      Home
+//      About
+//      Contact
+// Body
+//   searchContainer
+//    Search Bar
+// CardContainer
+//   card
+//    cardImg
+//    cardDetails
+// Footer
+//   address
+//   social media icons
+//   copyright
+//   terms and conditions
+//   privacy policy
+//   contact us
+
+//root to render
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//JSX is HTML like Syntax
-// JSX  => Parcel => babel => react.CreateElement => React.Element => JS object => HTMl Element
-//This is React Element converted from JSX
-const jsxHeading = (
-  <h2 className="Heading" tabIndex="10">
-    This is h2 by JSX
-  </h2>
-);
-
-// root.render(jsxHeading); //It  returns an Object
-
-// console.log(jsxHeading);
-
-// Functional Component
-
-const Heading = () => (
-  <h2 className="h2">This is H2 by functional Component</h2>
-);
-
-// ^
-// |
-// |
-//both are same
-const Heading1 = () => {
-  return <h2 className="h2">This is H2 by functional Component</h2>;
-};
-
-// multi line Functional Component
-const Heading3 = () => {
-  return (
-    <div>
-      <h2 className="h2">This is H2 by functional Component</h2>
-    </div>
-  );
-};
-
-// Component Composition
-
-const H1heading = <h1>This is H1 by Component Composition</h1>; //This is React Element
-
-// Calling React Element inside the Function Component
+//Header Component
 const Header = () => {
   return (
-    <div className="div">
-      {H1heading}
-      {console.log("Hello world!")}
-      <h2 className="h2"> This is H2 by Component Composition</h2>
-    </div>
+    <header className="header">
+      <div className="logo_Container">
+        <img
+          alt="Website Logo"
+          className="header_logo"
+          src="https://img.freepik.com/free-vector/food-shopping-logo-template-design_460848-10299.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1717113600&semt=ais_user"
+        ></img>
+      </div>
+      <nav className="nav_Container">
+        <ul className="nav_Container_Ul">
+          <li>About</li>
+          <li>Contact</li>
+          <li>Help</li>
+          <li>sing in</li>
+          <li>cart</li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
-const h3heading = <h3>This is H3 by Functional Component</h3>;
-
-//Adding Function Component inside the React Element
-const Footer = () => {
+//App Component
+const App = () => {
   return (
-    <div className="div">
-      {h3heading}
-      {console.log("Hello world!")}
-      <h2 className="h2"> This is H2 by Component Composition</h2>
+    <div className="app_layout">
+      <Header />
     </div>
   );
 };
 
-// Calling Functional Component  inside the React Element
-const footerDiv = (
-  <div>
-    <h1>This is H1 by Component Composition</h1>
-    <Footer />
-  </div>
-);
-
-// Creating a infinite loop using Component And React Element
-
-const CardContainer = () => {
-  return (
-    <div className="card-Container">
-      <h1>This is card Container</h1>
-    </div>
-  );
-};
-
-const Card = () => {
-  return (
-    <div className="div">
-      <h4>This is h4</h4>
-      <CardContainer />
-      <CardContainer></CardContainer>
-      {CardContainer()}
-    </div>
-  );
-};
-
-root.render(<Card />);
+root.render(<App />);
