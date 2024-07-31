@@ -41,7 +41,7 @@ const Header = () => {
           <li>About</li>
           <li>Contact</li>
           <li>Help</li>
-          <li>sing in</li>
+          <li>sign in</li>
           <li>cart</li>
         </ul>
       </nav>
