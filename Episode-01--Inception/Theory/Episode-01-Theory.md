@@ -46,7 +46,7 @@ A: `Async` - The async attribute is a `boolean attribute`. The script is downloa
 
 ### _Syntax_
 
-```
+```js
 <script async src="demo_async.js"></script>
 ```
 
@@ -54,6 +54,6 @@ A: `Async` - The async attribute is a `boolean attribute`. The script is downloa
 
 ### _Syntax_
 
-```sh
+```js
 <script defer src="demo_defer.js"></script>
 ```
