@@ -22,8 +22,8 @@ A: `npx` stands for Node Package Execute and it comes with the `npm`, when we in
 
 A: `Dependencies: -`
 
-- Dependencies, also known as runtime dependencies, are the essential packages that our application or project relies on to run correctly in a production environment. They are necessary for the execution and functionality of our code. For example, if we are building a web application using a JavaScript framework like React, react itself would be a runtime dependency. These dependencies are usually specified in a package.json file or an equivalent configuration file in other programming languages.
-- The purpose of runtime dependencies is to ensure that our application has all the required components to work as intended. When deploying our project to a production environment or sharing it with others, these dependencies need to be installed for the code to execute correctly. Runtime dependencies are typically included in the production build or deployed along with your application.
+- `Dependencies` also known as `runtime dependencies`, are the essential packages that our `application` or `project` relies on to run correctly in a `production environment`. They are necessary for the `execution and functionality of our code`. For example, if we are building a web application using a JavaScript framework like `React`, `react` itself would be a `runtime dependency`. These `dependencies` are usually specified in a `package.json` file or an equivalent configuration file in other programming languages.
+- The purpose of `runtime dependencies` is to ensure that our application has all the required `components` to work as intended. When deploying our project to a `production environment` or `sharing it with others`, these dependencies need to be installed for the code to execute correctly. `Runtime dependencies` are typically included in the `production build` or `deployed` along with our application.
 
 ### Following is the syntax for dependencies –
 
@@ -33,8 +33,8 @@ npm install <package name>
 
 `Dev Dependencies: -`
 
-- Dev dependencies, short for development dependencies, are packages that are not required for the actual execution of your code in a production environment. They are used during the development process and help developers with tasks such as testing, linting, bundling, and building the project. Dev dependencies are not bundled or shipped with your application when it is deployed or shared.
-- Dev dependencies include tools like testing frameworks (e.g., Jest), build tools (e.g., Babel, Webpack), and other development-specific utilities. These packages assist developers in writing high-quality code, automating tasks, and ensuring the project’s maintainability and reliability. Dev dependencies are typically installed during the development phase and are not necessary when running the project in a production environment.
+- `Dev dependencies` short for `development dependencies`, are packages that are not required for the `actual execution` of our code in a `production environment`. They are used during the `development process` and help developers with tasks such as `testing`, `linting`, `bundling`, and `building the project`. Dev dependencies are not bundled or shipped with our application when it is deployed or shared.
+- `Dev dependencies` include tools like `testing frameworks` (e.g., `Jest`), build tools (e.g., `Babel`, `Webpack`), and other development-specific utilities. These packages assist developers in writing `high-quality code`, `automating tasks`, and ensuring the project’s maintainability and reliability. `Dev dependencies` are typically installed during the `development phase` and are not necessary when running the project in a `production environment.`
 
 ### Following is the syntax for Dev dependencies –
 
