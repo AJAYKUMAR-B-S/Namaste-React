@@ -60,7 +60,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   box-shadow: 1px 1px 8px -3px #b7b3b3;
   cursor: pointer;
   overflow: hidden;
@@ -68,14 +67,19 @@ body {
 }
 .restaurant_Card_Img_Container {
   box-shadow: 0 1px 1px -2px rgba(0, 0, 0, 0.1);
+  height: 50%;
+  overflow: hidden;
 }
 .recipeImage {
-  width: 90%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .restaurant_Card_Details_Container {
   display: grid;
-  gap: 0.2rem;
+  gap: 0.1rem;
   padding: 1rem;
+  height: 50%;
 }
 .restaurant_Card:hover {
   transform: translateY(-5px);

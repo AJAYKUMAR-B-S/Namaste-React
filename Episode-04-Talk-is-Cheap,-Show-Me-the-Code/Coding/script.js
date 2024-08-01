@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import swiggyApiData from "./dummySwiggyApi";
 // Headers
 //   website logo
 //    Nav Bar
@@ -74,23 +74,25 @@ const Header = () => {
 
 //RestaurantCard Component
 // =============> another way to use Props by destructuring => properties
-const Restaurantcard = ({ restaurantName, rating, cost, cuisines }) => {
-  // We could also use like this
-  // const { restaurantName, rating, cost, cuisines} = props;
+const Restaurantcard = (props) => {
+  const { restaurantData } = props;
   return (
     <div className="restaurant_Card">
       <div className="restaurant_Card_Img_Container">
         <img
           alt="recipe_Img"
           className="recipeImage"
-          src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2024/4/19/03972ff7-ca47-4b34-a777-bec55c47869e_8944b667-7b9c-418b-88f3-df885ddadd6b.jpg"
+          src={
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+            restaurantData.cloudinaryImageId
+          }
         />
       </div>
       <div className="restaurant_Card_Details_Container">
-        <h2>{restaurantName}</h2>
-        <p>{rating}</p>
-        <p>{cost}</p>
-        <p>{cuisines}</p>
+        <h3>{restaurantData.name}</h3>
+        <p>⭐ {restaurantData.avgRating}</p>
+        <p>{restaurantData.costForTwo}</p>
+        <p>{restaurantData.cuisines.join(",  ")}</p>
       </div>
     </div>
   );
@@ -105,24 +107,14 @@ const Main = () => {
         <input type="text" placeholder="Search for food" />
       </div>
       <div className="restaurants_Card_Container">
-        <Restaurantcard
-          restaurantName="Burger king"
-          rating="Rating: 4.5"
-          cost="Average Cost: Rs. 150"
-          cuisines="Fast food"
-        />
-        <Restaurantcard
-          restaurantName="Pizza hut"
-          rating="Rating: 4.1"
-          cost="Average Cost: Rs. 100"
-          cuisines="Fresh food"
-        />
-        <Restaurantcard
-          restaurantName="Food point"
-          rating="Rating: 3.4"
-          cost="Average Cost: Rs. 200"
-          cuisines="Home food"
-        />
+        {swiggyApiData.map((data) => {
+          return (
+            <Restaurantcard
+              key={data.card.card.info.id}
+              restaurantData={data.card.card.info}
+            />
+          );
+        })}
       </div>
     </main>
   );
