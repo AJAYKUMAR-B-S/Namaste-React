@@ -1,4 +1,4 @@
-## Namaste React Course by Akshay Saini
+## Namaste React 🚀 Course by Akshay Saini
 
 # Episode-03-Laying-the-foundation
 
