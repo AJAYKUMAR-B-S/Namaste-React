@@ -1,6 +1,6 @@
-## Namaste React Course by Akshay Saini 🚀
+## Namaste React 🚀 Course by Akshay Saini 
 
-# _Episode 01 - Inception_
+# Episode-01--Inception 
 
 ## Q: What is `Emmet`?
 A: `Emmet` is a powerful toolkit for web developers that significantly speeds up HTML and CSS coding. It allows developers to write concise, abbreviated syntax that expands into full-fledged code snippets.
