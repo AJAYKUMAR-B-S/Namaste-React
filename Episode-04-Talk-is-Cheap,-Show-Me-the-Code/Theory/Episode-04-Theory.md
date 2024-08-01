@@ -5,6 +5,10 @@
 ## Q: Is `JSX` mandatory for React?
 
 A: `JSX` is not mandatory for React. While JSX is commonly used and recommended for its readability and ease of use, we can write React applications using plain JavaScript.
+#### Example of `JSX`:
+```js
+  const sample = <h1>Greetings</h1>;
+```
 
 ## Q: Is `ES6` mandatory for React?
 
@@ -21,7 +25,7 @@ A: The Difference is stated below:
 
 #### Example
 
-```
+```js
 <TitleComponent>
     <FirstChildComponent />
     <SecondChildComponent />
@@ -32,6 +36,9 @@ A: The Difference is stated below:
 ## Q: How can I write `comments` in JSX?
 
 A: React comments in JSX differ slightly from comments in standard JavaScript. Comments in JSX must be enclosed in curly brackets {}.
+
+#### Example
+
 
 ## Q: What is `<React.Fragment></React.Fragment>` and `<></>`?
 
