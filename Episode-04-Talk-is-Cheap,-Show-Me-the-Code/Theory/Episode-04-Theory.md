@@ -4,7 +4,7 @@
 
 ## Q: Is `JSX` mandatory for React?
 
-A: `JSX` is not mandatory for React. While JSX is commonly used and recommended for its readability and ease of use, we can write React applications using plain JavaScript.
+A: `JSX` is not mandatory for React. While `JSX` is a popular `syntax extension for JavaScript` that makes it easier to `write` and `understand the structure of React components`, we can use plain `JavaScript` to achieve the same results. `JSX` allows us to write `HTML-like code within our JavaScript`, which gets transpiled to regular `JavaScript` by tools like `Babel`.
 #### Example of `JSX`:
 ```js
   const sample = <h1>Greetings</h1>;
@@ -12,7 +12,7 @@ A: `JSX` is not mandatory for React. While JSX is commonly used and recommended 
 
 ## Q: Is `ES6` mandatory for React?
 
-A: ES6 (ECMAScript 2015) is not strictly mandatory for React, but it is highly recommended. React can be used with ES5 syntax, but ES6 provides many features that make working with React easier and more efficient.
+A: `ES6` (ECMAScript 2015) is not strictly mandatory for `React`, but it is `highly recommended`. `React` can be used with `ES5 syntax`, but `ES6` provides many features that make working with `React easier and more efficient`.
 
 ## Q: `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
 
@@ -35,20 +35,43 @@ A: The Difference is stated below:
 
 ## Q: How can I write `comments` in JSX?
 
-A: React comments in JSX differ slightly from comments in standard JavaScript. Comments in JSX must be enclosed in curly brackets {}.
+A: `React comments` in `JSX` differ slightly from comments in standard `JavaScript`. Comments in `JSX` must be enclosed in `curly brackets {}`.
 
 #### Example
+
+<img src="../Assets/commentsInReact.png" width="600" height="150" alt="Description of Picture1">
+
 
 
 ## Q: What is `<React.Fragment></React.Fragment>` and `<></>`?
 
-A: <React.Fragment></React.Fragment> and <></> serve the same purpose in React. They are both ways to group multiple elements without adding an extra DOM node. Here's a brief explanation:
+A: `<React.Fragment></React.Fragment>` and `<></>` serve the same purpose in `React`. They are both ways to group `multiple elements without adding an extra DOM node`. Here's a brief explanation:
 
-- <React.Fragment></React.Fragment>:
-  This is the long-form syntax for React Fragments. It allows you to group multiple elements without creating an additional parent DOM element.
-- <></> (Short Syntax):
-  This is the short syntax for React Fragments, introduced in React 16.2. It functions identically to <React.Fragment></React.Fragment> but with a more concise syntax.
+- `<React.Fragment></React.Fragment>:`
+  This is the long-form syntax for `React Fragments`. It allows us to group `multiple elements without creating an additional parent DOM element`.
+- `<></> (Short Syntax)`:
+  This is the short syntax for `React Fragments`, introduced in `React 16.2.` It functions identically to `<React.Fragment></React.Fragment>` but with a more concise syntax.
 
+  #### Example
+
+```js
+return (
+        <React.Fragment>
+            <Header />
+            <Navigation />
+            <Main />
+            <Footer />
+        </React.Fragment>
+    );
+
+return (
+        <>
+            <Header />
+            <Navigation />
+            <Main />
+            <Footer />
+        </>
+    );
 ```
 
 ## Q: What is `Reconciliation` in React?
