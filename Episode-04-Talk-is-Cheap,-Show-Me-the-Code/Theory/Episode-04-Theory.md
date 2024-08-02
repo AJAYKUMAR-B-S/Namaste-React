@@ -91,22 +91,20 @@ Because Fiber is asynchronous, React can:
 
 ## Q: Why do we need `keys` in React?
 
-A: A `key` is a special attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys are unique Identifier used to give an identity to the elements in the lists.
-Keys should be given to the elements within the array to give the elements a stable identity.
+A: `Keys` in React are essential for `identifying elements uniquely among siblings in a list`. They help `React optimize` the `reconciliation` process by efficiently determining which items have `changed`, `been added,` or `removed`, thereby minimizing unnecessary re-renders. `Keys` also ensure that the `state of components` is correctly maintained across updates. Using unique identifiers as `keys`, rather than indices, is recommended to avoid issues when list items change order.
 
 #### Example
 
-```
+```js
 
-<li key={0}>1</li>
-<li key={1}>2</li>
-<li key={2}>3</li>
+<div key={0}>1</div>
+<div key={1}>2</div>
+<div key={2}>3</div>
 ```
 
 ## Q: Can we use `index as keys` in React?
 
-A: Yes, we can use the `index as keys`, but it is not considered as a good practice to use them because if the order of items may change. This can negatively impact performance and may cause issues with component state.
-Keys are taken from each object which is being rendered. There might be a possibility that if we modify the incoming data react may render them in unusual order.
+A: Yes, we can use the `index as keys` in `React`, but it is generally `not recommended`. Using `index` as `keys` can lead to issues when the order of items changes, as it can cause problems with component state and lead to inefficient updates.
 
 ## Q: What is `props in React`? Ways to.
 
