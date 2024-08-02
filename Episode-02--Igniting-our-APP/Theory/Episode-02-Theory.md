@@ -4,19 +4,19 @@
 
 ## Q: What is `NPM`?
 
-A: `npm` is the package manager for the Node.js JavaScript runtime environment. It is an online repository for publishing and installing packages (libraries or modules) that can be used in Node.js applications.
+A: `npm` is the `package manager` for the `Node.js JavaScript runtime environment`. It is an `online repository` for publishing and installing `packages` (libraries or modules) that can be used in `Node.js applications`.
 
 ## Q: What is `Parcel/Webpack`? Why do we need it?
 
-A: `Parcel/Webpack` is a popular open-source JavaScript bundlers for web applications. A bundler is a tool that takes various pieces of code, assets, and dependencies from a web application and bundles them together into a format that is optimized forward deployment on the web.
+A: `Parcel/Webpack` is a popular open-source `JavaScript bundlers` for web applications. A `bundler` is a tool that takes various pieces of `code`, `assets`, and `dependencies` from a web application and `bundles them together` into a format that is optimized forward deployment on the web.
 
 ## Q: What is `.parcel-cache`?
 
-A: The `parcel-cache` directory in Parcel is a storage location used by the Parcel bundler to cache (cache is a temporary storage for quick access to frequently used data) intermediate build results and metadata. This caching mechanism improves build performance by avoiding redundant work, allowing Parcel to quickly rebuild only the parts of the project that have changed.
+A: The `parcel-cache` directory in `Parcel` is a storage location used by the Parcel bundler to `cache` `(cache is a temporary storage for quick access to frequently used data)` intermediate build results and metadata. This caching mechanism improves build performance by avoiding `redundant work`, allowing Parcel to quickly rebuild only the parts of the project that have changed.
 
 ## Q: What is `npx`?
 
-A: `npx` stands for Node Package Execute and it comes with the `npm`, when we installed `npm` above 5.2.0 version then automatically `npx` will be installed. It is a `npm package runner` that can execute any package that we want from the `npm` registry without even installing that package. The `npx` is useful during a single time use package. If we have installed npm below 5.2.0 then npx is not installed in our system.
+A: `npx` stands for `Package Execute` and it comes with the `npm`, when we installed `npm` above 5.2.0 version then automatically `npx` will be installed. It is a `npm package runner` that can execute any package that we want from the `npm` registry without even installing that package. The `npx` is useful during a single time use package. If we have installed npm below 5.2.0 then npx is not installed in our system.
 
 ## Q: What is difference between `dependencies` vs `devDependencies`?
 
@@ -50,12 +50,11 @@ npm install -D <package name>
 
 ## Q: What is `Tree Shaking`?
 
-A: `Tree shaking` is process of removing the unwanted code that we do not use while developing the application.
-In computing, tree shaking is a dead code elimination technique that is applied when optimizing code.
+A: `Tree shaking` is an optimization technique used in modern `JavaScript bundlers` to eliminate dead code (unused code) from the final bundle.
 
 ## Q: What is `Hot Module Replacement`?
 
-A: `Hot Module Replacement`, on the other hand, is a technique that updates the application in real-time without requiring a full-page refresh.
+A: `Hot Module Replacement`, on the other hand, is a technique that `updates the application in real-time without requiring a full-page refresh`.
 
 ## Q: List down your favorite `5 superpowers of Parcel` and describe any 3 of them in your own words.
 
