@@ -1,21 +1,27 @@
-## Namaste React Course by Akshay Saini
+## Namaste React 🚀 Course by Akshay Saini
 
 # Episode-03-Laying-the-foundation
 
 ## Q: What is `JSX`?
 
-A: JSX (JavaScript XML) is a syntax extension for JavaScript, commonly used with React. It allows us to write HTML-like code within JavaScript, making it easier to describe the structure of UI components. At first glance, JSX looks like a mix of HTML and JavaScript because of its tag-based structure, but it offers much more functionality.
+A: `JSX (JavaScript XML)` is a syntax extension for JavaScript, commonly used with `React`. It allows us to write `HTML-like code within JavaScript`, making it easier to describe the structure of `UI components`. At first glance, `JSX` looks like a mix of `HTML` and `JavaScript` because of its tag-based structure, but it offers much more functionality.
+
+
+### Example 1 using JSX:
+<img src="../Assets/Picture2.png" width="400" height="150" alt="Description of Picture1">
+
+### Example 2 Without using JSX:
+<img src="../Assets/Picture1.png" width="700" height="200" alt="Description of Picture2">
 
 ## Q: Superpowers of `JSX`.
 
 A:
-
-- XML-like syntax for describing UI
-- Combines JavaScript and markup in one language
-- Enables embedding expressions in markup
-- Allows for component composition
-- Supports custom components alongside HTML elements
-- Improves code readability for complex UI structures
+- `XML-like syntax for describing UI`
+- Combines `JavaScript` and `markup` in one language
+- Enables embedding `expressions` in `markup`
+- Allows for `component composition`
+- Supports custom `components` alongside `HTML elements`
+- Improves code `readability` for complex `UI structures`
 
 ## Q: Role of `type` attribute in script tag? What options can I use there?
 
@@ -25,7 +31,7 @@ A: The `type` attribute specifies the type of the script. The type attribute ide
 
 - `text/javascript` : It is the basic standard of writing javascript code inside the `<script>` tag.
   ### Syntax
-  ```
+  ```js
   <script type="text/javascript"></script>
   ```
 - `text/ecmascript` : this value indicates that the script is following the `EcmaScript` standards.
@@ -45,7 +51,7 @@ A: The Difference is stated below:
 
 ### Example
 
-```
+```js
 <TitleComponent>
     <FirstChildComponent />
     <SecondChildComponent />

@@ -4,11 +4,15 @@
 
 ## Q: Is `JSX` mandatory for React?
 
-A: `JSX` is not mandatory for React. While JSX is commonly used and recommended for its readability and ease of use, we can write React applications using plain JavaScript.
+A: `JSX` is not mandatory for React. While `JSX` is a popular `syntax extension for JavaScript` that makes it easier to `write` and `understand the structure of React components`, we can use plain `JavaScript` to achieve the same results. `JSX` allows us to write `HTML-like code within our JavaScript`, which gets transpiled to regular `JavaScript` by tools like `Babel`.
+#### Example of `JSX`:
+```js
+  const sample = <h1>Greetings</h1>;
+```
 
 ## Q: Is `ES6` mandatory for React?
 
-A: ES6 (ECMAScript 2015) is not strictly mandatory for React, but it is highly recommended. React can be used with ES5 syntax, but ES6 provides many features that make working with React easier and more efficient.
+A: `ES6` (ECMAScript 2015) is not strictly mandatory for `React`, but it is `highly recommended`. `React` can be used with `ES5 syntax`, but `ES6` provides many features that make working with `React easier and more efficient`.
 
 ## Q: `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
 
@@ -21,7 +25,7 @@ A: The Difference is stated below:
 
 #### Example
 
-```
+```js
 <TitleComponent>
     <FirstChildComponent />
     <SecondChildComponent />
@@ -31,17 +35,43 @@ A: The Difference is stated below:
 
 ## Q: How can I write `comments` in JSX?
 
-A: React comments in JSX differ slightly from comments in standard JavaScript. Comments in JSX must be enclosed in curly brackets {}.
+A: `React comments` in `JSX` differ slightly from comments in standard `JavaScript`. Comments in `JSX` must be enclosed in `curly brackets {}`.
+
+#### Example
+
+<img src="../Assets/commentsInReact.png" width="600" height="150" alt="Description of Picture1">
+
+
 
 ## Q: What is `<React.Fragment></React.Fragment>` and `<></>`?
 
-A: <React.Fragment></React.Fragment> and <></> serve the same purpose in React. They are both ways to group multiple elements without adding an extra DOM node. Here's a brief explanation:
+A: `<React.Fragment></React.Fragment>` and `<></>` serve the same purpose in `React`. They are both ways to group `multiple elements without adding an extra DOM node`. Here's a brief explanation:
 
-- <React.Fragment></React.Fragment>:
-  This is the long-form syntax for React Fragments. It allows you to group multiple elements without creating an additional parent DOM element.
-- <></> (Short Syntax):
-  This is the short syntax for React Fragments, introduced in React 16.2. It functions identically to <React.Fragment></React.Fragment> but with a more concise syntax.
+- `<React.Fragment></React.Fragment>:`
+  This is the long-form syntax for `React Fragments`. It allows us to group `multiple elements without creating an additional parent DOM element`.
+- `<></> (Short Syntax)`:
+  This is the short syntax for `React Fragments`, introduced in `React 16.2.` It functions identically to `<React.Fragment></React.Fragment>` but with a more concise syntax.
 
+  #### Example
+
+```js
+return (
+        <React.Fragment>
+            <Header />
+            <Navigation />
+            <Main />
+            <Footer />
+        </React.Fragment>
+    );
+
+return (
+        <>
+            <Header />
+            <Navigation />
+            <Main />
+            <Footer />
+        </>
+    );
 ```
 
 ## Q: What is `Reconciliation` in React?
@@ -61,22 +91,20 @@ Because Fiber is asynchronous, React can:
 
 ## Q: Why do we need `keys` in React?
 
-A: A `key` is a special attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys are unique Identifier used to give an identity to the elements in the lists.
-Keys should be given to the elements within the array to give the elements a stable identity.
+A: `Keys` in React are essential for `identifying elements uniquely among siblings in a list`. They help `React optimize` the `reconciliation` process by efficiently determining which items have `changed`, `been added,` or `removed`, thereby minimizing unnecessary re-renders. `Keys` also ensure that the `state of components` is correctly maintained across updates. Using unique identifiers as `keys`, rather than indices, is recommended to avoid issues when list items change order.
 
 #### Example
 
-```
+```js
 
-<li key={0}>1</li>
-<li key={1}>2</li>
-<li key={2}>3</li>
+<div key={0}>1</div>
+<div key={1}>2</div>
+<div key={2}>3</div>
 ```
 
 ## Q: Can we use `index as keys` in React?
 
-A: Yes, we can use the `index as keys`, but it is not considered as a good practice to use them because if the order of items may change. This can negatively impact performance and may cause issues with component state.
-Keys are taken from each object which is being rendered. There might be a possibility that if we modify the incoming data react may render them in unusual order.
+A: Yes, we can use the `index as keys` in `React`, but it is generally `not recommended`. Using `index` as `keys` can lead to issues when the order of items changes, as it can cause problems with component state and lead to inefficient updates.
 
 ## Q: What is `props in React`? Ways to.
 
@@ -96,27 +124,21 @@ function App() {
 
 ## Q: What is `Config Driven UI`?
 
-A: `Config Driven UI` are based on the configurations of the data application receives. It is rather a good practice to use config driven UIs to make application for dynamic.
-It is a very common & basic approach to interact with the User. It provides a generic interface to develop things which help your project scale well. It saves a lot of development time and effort.
-A typical login form, common in most of the Apps. Most of these forms also get frequent updates as the requirements increase in terms of Form Validations, dropdown options,.. or design changes.
+A: `Config Driven UI` is an approach to building `user interfaces` where the `structure`, `layout`, and `behavior of UI components` are defined using configuration files or data structures, rather than being `hard-coded` in the application's source code.
 
 ## Q: Difference between `Virtual DOM` and `Real DOM`?
 
 A: DOM stands for `Document Object Model`, which represents your application UI and whenever the changes are made in the application, this DOM gets updated and the user is able to visualize the changes. DOM is an interface that allows scripts to update the content, style, and structure of the document.
 
 - `Virtual DOM`
-  - The Virtual DOM is a light-weight abstraction of the DOM. You can think of it as a copy of the DOM, that can be updated without affecting the actual DOM. It has all the same properties as the real DOM object, but doesn’t have the ability to write to the screen like the real DOM.
-  - Virtual DOM is just like a blueprint of a machine, can do the changes in the blueprint but those changes will not directly apply to the machine.
-  - Reconciliation is a process to compare and keep in sync the two files (Real and Virtual DOM). Diffing algorithm is a technique of reconciliation which is used by React.
+  - The `Virtual DOM` is an in-memory representation of the Real `DOM`. It is a concept implemented by libraries like React to improve performance and efficiency in updating the web page.
 - `Real DOM`
-  - The DOM represents the web page often called a document with a logical tree and each branch of the tree ends in a node and each node contains object programmers can modify the content of the document using a scripting language like javascript and the changes and updates to the dom are fast because of its tree-like structure but after changes, the updated element and its children have to be re-rendered to update the application UI so the re-rendering of the UI which make the dom slow all the UI components you need to be rendered for every dom update so real dom would render the entire list and not only those item that receives the update .
+  - The `Document Object Model (DOM)` is a programming interface for web documents. It represents the structure of a web page as a tree of objects.
 
 | `Real DOM`                                                       | `Virtual DOM`                                            |
 | ---------------------------------------------------------------- | -------------------------------------------------------- |
-| DOM manipulation is very expensive                               | DOM manipulation is very easy                            |
-| There is too much memory wastage                                 | No memory wastage                                        |
-| It updates Slow                                                  | It updates fast                                          |
-| It can directly update HTML                                      | It can’t update HTML directly                            |
-| Creates a new DOM if the element updates.                        | Update the JSX if the element update                     |
-| It allows us to directly target any specific node (HTML element) | It can produce about 200,000 Virtual DOM Nodes / Second. |
-| It represents the UI of your application                         | It is only a virtual representation of the DOM           |
+| Actual browser DOM (Document Object Model)                       | Lightweight copy of the Real DOM in memory               |
+| Represents the webpage's structure                               | JavaScript object representation of UI                   |
+| Directly manipulated by JavaScrip                                | Used as intermediary for DOM manipulation                |
+| Slow for frequent updates                                        | Efficiently calculates minimal changes needed            |
+| Updates entire tree structure when changed                       | Batches updates before applying to Real DOM              |

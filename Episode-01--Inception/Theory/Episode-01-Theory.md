@@ -1,17 +1,17 @@
-## Namaste React Course by Akshay Saini 🚀
+## Namaste React 🚀 Course by Akshay Saini 
 
-# _Episode 01 - Inception_
+# Episode-01--Inception 
 
 ## Q: What is `Emmet`?
-A: `Emmet` is a powerful toolkit for web developers that significantly speeds up HTML and CSS coding. It allows developers to write concise, abbreviated syntax that expands into full-fledged code snippets.
+A: `Emmet` is a powerful toolkit for web developers that significantly speeds up `HTML` and `CSS` coding. It allows developers to write concise, abbreviated syntax that expands into `full-fledged` code snippets.
 
 
 ## Q: Difference between a `Library and Framework`?
-`Library`: -Library is a collections of prewritten code snippets that can be used and reused to perform common tasks without having to write code from scratch.<br>
-`Framework`: -A framework is a pre-built structure that provides a foundation and guidelines for developing software applications. It offers a set of tools, libraries, and conventions that define how an application should be organized and built, often controlling the overall program flow.
+`Library`: -Library is a `collections of prewritten code snippets` that can be used and reused to perform common tasks without having to write code from scratch.<br>
+`Framework`: -A framework is a `pre-built structure` that provides a `foundation` and `guidelines` for developing software applications. It offers a set of `tools`, `libraries`, and `conventions` that define how an application should be organized and built, often controlling the overall program flow.
 
 ## Q: What is `CDN`? Why do we use it?
-A: A `content delivery network (CDN)` is a group of servers spread across different geographical locations worldwide to enable the quick delivery of a website’s content. It is also known as a content distribution network.
+A: A `content delivery network (CDN)` is a group of `servers` spread across different `geographical locations` worldwide to enable the quick delivery of a `website’s content`. It is also known as a `content distribution network`.
 
 ## Q: Why is `React known as React`?
 A: `React` is named React because of its ability to `react to changes in data`.
@@ -20,22 +20,22 @@ The name `React` was chosen because the library was designed to allow developers
 `React` is a `JavaScript-based UI development library`. `Facebook` and an `open-source developer community` run it.
 
 ## Q: What is `crossorigin in script tag`?
-A: The `crossorigin` attribute sets the mode of the request to an HTTP CORS Request.
-The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains.
+A: The `crossorigin` attribute sets the mode of the request to an `HTTP CORS Request`.
+The purpose of `crossorigin attribute` is used to share the resources from one `domain` to another `domain`. Basically, it is used to handle the `CORS` request that checks whether it is safe to allow for sharing the resources from other domains.
 
 ## Q: What is difference between `React and ReactDOM`?
-React and ReactDOM are both libraries that are used in the development of user interfaces, but they serve different purposes. Here's a breakdown of the differences between the two:<br><br>
+`React` and `ReactDOM` are both `libraries` that are used in the development of `user interfaces`, but they serve different purposes. Here's a breakdown of the differences between the two:<br><br>
 `React`:<br>
-▪	React is the core library for building user interfaces.<br>
-▪	It contains the functionality for defining and creating React components.<br>
-▪	It provides features like state management, props, and the component lifecycle.<br>
-▪	React can be used for both web and mobile development (React Native).
+▪	`React` is the `core library` for building user `interfaces`.<br>
+▪	It contains the functionality for defining and creating `React components`.<br>
+▪	It provides features like `state management`, `props`, and the `component lifecycle`.<br>
+▪	React can be used for both `web` and `mobile development` (React Native).
 
 `ReactDOM`:<br>
-▪	ReactDOM is a complementary library specifically for web applications.<br>
-▪	It provides DOM-specific methods that enable React to interact with the browser's DOM.<br>
-▪	It's responsible for rendering React components to the DOM.<br>
-▪	It's only used in web browser environments.<br>
+▪	`ReactDOM` is a complementary library specifically for `web applications`.<br>
+▪	It provides `DOM-specific` methods that enable `React` to interact with the `browser's DOM`.<br>
+▪	It's responsible for rendering `React components` to the `DOM`.<br>
+▪	It's only used in `web browser environments`.<br>
 
 ## Q: What is difference between `react.development.js` and `react.production.js` files via `CDN`?
 A: `Development` is the stage of an application before it's made public while `production` is the term used for the same application when it's made `public`.
@@ -46,7 +46,7 @@ A: `Async` - The async attribute is a `boolean attribute`. The script is downloa
 
 ### _Syntax_
 
-```
+```js
 <script async src="demo_async.js"></script>
 ```
 
@@ -54,6 +54,6 @@ A: `Async` - The async attribute is a `boolean attribute`. The script is downloa
 
 ### _Syntax_
 
-```sh
+```js
 <script defer src="demo_defer.js"></script>
 ```
