@@ -1,11 +1,8 @@
 import { RESTAURANT_CARD_IMG_CDN_URL } from "../utils/constants";
 
-console.log(RESTAURANT_CARD_IMG_CDN_URL);
-
 const Restaurantcard = (props) => {
   const { restaurantData } = props;
 
-  console.log();
   return (
     <div className="restaurant_Card">
       <div className="restaurant_Card_Img_Container">
