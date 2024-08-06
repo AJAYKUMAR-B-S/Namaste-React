@@ -7,7 +7,7 @@
 A: `JSX` is not mandatory for React. While `JSX` is a popular `syntax extension for JavaScript` that makes it easier to `write` and `understand the structure of React components`, we can use plain `JavaScript` to achieve the same results. `JSX` allows us to write `HTML-like code within our JavaScript`, which gets transpiled to regular `JavaScript` by tools like `Babel`.
 #### Example of `JSX`:
 ```js
-  const sample = <h1>Greetings</h1>;
+  const greet = <h1>Greetings</h1>;
 ```
 
 ## Q: Is `ES6` mandatory for React?
@@ -45,34 +45,21 @@ A: `React comments` in `JSX` differ slightly from comments in standard `JavaScri
 
 ## Q: What is `<React.Fragment></React.Fragment>` and `<></>`?
 
-A: `<React.Fragment></React.Fragment>` and `<></>` serve the same purpose in `React`. They are both ways to group `multiple elements without adding an extra DOM node`. Here's a brief explanation:
+A: In React, `<React.Fragment></React.Fragment>` and its shorthand syntax `<></>` is a feature that allows to `group multiple elements without adding extra DOM wrappers`. Useful to return `multiple elements` from a `component's` render method without `extra containers`.
+- With `React 16.2` and above Fragments we can use a fragment to avoid adding the `extra wrapper`, Fragments are denoted by the special syntax:
+`<React.Fragment>` or
+`<> and </>` the shorthand
 
-- `<React.Fragment></React.Fragment>:`
-  This is the long-form syntax for `React Fragments`. It allows us to group `multiple elements without creating an additional parent DOM element`.
-- `<></> (Short Syntax)`:
-  This is the short syntax for `React Fragments`, introduced in `React 16.2.` It functions identically to `<React.Fragment></React.Fragment>` but with a more concise syntax.
+## Without Fragments
+Prior to React 16.2, we had to wrap them in a `single parent element`.
+#### Example
+<img src="../Assets/Picture1.png" width="200" height="150" alt="Without Fragments Example">
 
-  #### Example
 
-```js
-return (
-        <React.Fragment>
-            <Header />
-            <Navigation />
-            <Main />
-            <Footer />
-        </React.Fragment>
-    );
-
-return (
-        <>
-            <Header />
-            <Navigation />
-            <Main />
-            <Footer />
-        </>
-    );
-```
+## With Fragments (Shorthand)
+A Fragment is simply an `empty element` that acts as a `container for other elements` without rendering any additional `DOM nodes`.
+#### Example
+<img src="../Assets/Picture2.png" width="200" height="150" alt="Without Fragments Example">
 
 ## Q: What is `Reconciliation` in React?
 A: `Reconciliation` is the process through which React updates the Browser DOM and makes React work faster. React use a `diffing algorithm` so that component updates are predictable and faster. React would first calculate the difference between the real DOM and the copy of DOM (Virtual DOM) when there's an update of components.
