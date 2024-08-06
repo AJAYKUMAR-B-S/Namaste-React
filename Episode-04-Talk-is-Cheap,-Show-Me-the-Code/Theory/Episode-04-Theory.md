@@ -102,19 +102,9 @@ A: Yes, we can use the `index as keys` in `React`, but it is generally `not reco
 
 ## Q: What is `props in React`? Ways to.
 
-A: props stands for properties. Props are arguments passed into React components. props are used in React to pass data from one component to another (from a parent component to a child component(s)). They are useful when you want the flow of data in your app to be dynamic.
+A: In React, `props (short for "properties")` are a way to pass `data` from a `parent component` to a `child component`. They are similar to `arguments` in a `function`, allowing `components` to be `reusable` and `dynamic`.
 
 #### Example
-
-```
-function App() {
-  return (
-    <div className="App">
-      <Tool name="Chetan Nada" tool="Figma"/> // name and tool are props
-    </div>
-  )
-}
-```
 
 ## Q: What is `Config Driven UI`?
 
