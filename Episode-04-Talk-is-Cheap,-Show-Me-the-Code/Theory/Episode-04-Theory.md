@@ -105,10 +105,12 @@ A: Yes, we can use the `index as keys` in `React`, but it is generally `not reco
 A: In React, `props (short for "properties")` are a way to pass `data` from a `parent component` to a `child component`. They are similar to `arguments` in a `function`, allowing `components` to be `reusable` and `dynamic`.
 
 #### Example
+<img src="../Assets/Picture3.png" width="500" height="350" alt="Description of Picture1">
+
 
 ## Q: What is `Config Driven UI`?
 
-A: `Config Driven UI` is an approach to building `user interfaces` where the `structure`, `layout`, and `behavior of UI components` are defined using configuration files or data structures, rather than being `hard-coded` in the application's source code.
+A: `Config-driven UI` is a design pattern where the `structure` and `behaviour` of the `user interface` are defined using `configuration files` rather than `hard-coded` in the application. These `configuration files` are typically in formats like `JSON` or `YAML`. By separating the `UI logic` from the code, developers can easily modify the `UI` without changing the underlying codebase.
 
 ## Q: Difference between `Virtual DOM` and `Real DOM`?
 
