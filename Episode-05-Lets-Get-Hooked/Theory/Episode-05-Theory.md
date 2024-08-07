@@ -8,3 +8,9 @@
 ### There are two main types of export in React: `named export` and `default export`.
 ## Default Exports
 Default exports are used when a `module exports a single value` (object, function, class, etc.). This value can be `imported with any name in the importing module`.
+
+<img src="../Assets/Picture1.png" width="350" height="250" alt="Default Exports example img">
+
+ we can import the `ComponentA` component in another file like this:<br>
+ 
+<img src="../Assets/Picture2.png" width="300" height="200" alt="Default Exports example img">
