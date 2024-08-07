@@ -22,3 +22,12 @@ When we use default exports, we can name the imported thing whatever we want.
 ## Named Exports
 `Named exports` allow us to `export` multiple `variables`, `functions`, or `classes` from a single module. Each export must be explicitly named, and the importing module must use the `same names` to access the exported values. We have to import them using `curly braces`.
 
+<img src="../Assets/Picture4.png" width="500" height="300" alt="Named Exportsexample img">
+
+To use these `functions` and `variables` in another file, we need to `import` them using the `same names` and `curly braces`:
+
+<img src="../Assets/Picture5.png" width="800" height="150" alt="Named Exportsexample img">
+
+## * as Export
+The `* as` syntax in exports is used for `grouping all the named exports` from a module into a single object.
+
