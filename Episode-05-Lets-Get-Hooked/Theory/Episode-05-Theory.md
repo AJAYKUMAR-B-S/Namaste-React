@@ -13,4 +13,12 @@ Default exports are used when a `module exports a single value` (object, functio
 
  we can import the `ComponentA` component in another file like this:<br>
  
-<img src="../Assets/Picture2.png" width="300" height="200" alt="Default Exports example img">
+<img src="../Assets/Picture2.png" width="300" height="170" alt="Default Exports example img">
+
+When we use default exports, we can name the imported thing whatever we want.
+
+<img src="../Assets/Picture3.png" width="300" height="150" alt="Default Exports example img">
+
+## Named Exports
+`Named exports` allow us to `export` multiple `variables`, `functions`, or `classes` from a single module. Each export must be explicitly named, and the importing module must use the `same names` to access the exported values. We have to import them using `curly braces`.
+
