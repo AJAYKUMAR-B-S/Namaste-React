@@ -13,7 +13,7 @@ Default exports are used when a `module exports a single value` (object, functio
 
  we can import the `ComponentA` component in another file like this:<br>
  
-<img src="../Assets/Picture2.png" width="300" height="170" alt="Default Exports example img">
+<img src="../Assets/Picture2.png" width="300" height="150" alt="Default Exports example img">
 
 When we use default exports, we can name the imported thing whatever we want.
 
@@ -31,7 +31,7 @@ To use these `functions` and `variables` in another file, we need to `import` th
 ## * as Export
 The `* as` syntax in exports is used for `grouping all the named exports` from a module into a single object.
 
-<img src="../Assets/Picture6.png" width="300" height="180" alt="* as Export example img">
+<img src="../Assets/Picture6.png" width="300" height="200" alt="* as Export example img">
 
 <br>
 <br>
