@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.gallery_Container {
+  width: 600px;
+  height: 600px;
+  background-color: cadetblue;
+  padding: 3rem;
+  border-radius: 5px;
+  position: relative;
+}
+.right_Button,
+.left_Button {
+  padding: 2rem;
+  background-color: whitesmoke;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.right_Button {
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+}
+.left_Button {
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+}
+.image_Container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image_Container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
