@@ -1,10 +1,11 @@
-import swiggyApiData from "../utils/dummySwiggyAPI.js";
+import SWIGGY_MOCK_API_DATA from "../utils/swiggyMockApiData";
 import Restaurantcard from "./RestaurantCard";
 import { useState } from "react";
 
+console.log(SWIGGY_MOCK_API_DATA);
 //Main Component
 const Main = () => {
-  const [apiData, setapiData] = useState(swiggyApiData);
+  const [apiData, setapiData] = useState(SWIGGY_MOCK_API_DATA);
   return (
     <main className="main">
       <div className="filter_Container">
@@ -13,7 +14,7 @@ const Main = () => {
           className="filter_button"
           onClick={() => {
             const filterApiData = apiData.filter(
-              (data) => data.card.card.info.avgRating > 4.3
+              (data) => data.info.avgRating > 4.3
             );
             setapiData(filterApiData);
           }}
@@ -23,7 +24,7 @@ const Main = () => {
         <button
           className="filter_button"
           onClick={() => {
-            setapiData(swiggyApiData);
+            setapiData(SWIGGY_MOCK_API_DATA);
           }}
         >
           All Restaurant
@@ -32,10 +33,7 @@ const Main = () => {
       <div className="restaurants_Card_Container">
         {apiData.map((data) => {
           return (
-            <Restaurantcard
-              key={data.card.card.info.id}
-              restaurantData={data.card.card.info}
-            />
+            <Restaurantcard key={data.info.id} restaurantData={data.info} />
           );
         })}
       </div>
