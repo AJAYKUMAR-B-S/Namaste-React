@@ -1,11 +1,26 @@
 import SWIGGY_MOCK_API_DATA from "../utils/swiggyMockApiData";
 import Restaurantcard from "./RestaurantCard";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-console.log(SWIGGY_MOCK_API_DATA);
-//Main Component
 const Main = () => {
   const [apiData, setapiData] = useState(SWIGGY_MOCK_API_DATA);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+
+    const toJson = await data.json();
+
+    setapiData(
+      toJson.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+    );
+  };
+
   return (
     <main className="main">
       <div className="filter_Container">
