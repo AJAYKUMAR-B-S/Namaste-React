@@ -33,6 +33,7 @@ body {
 .nav_Container_Ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2rem;
   list-style: none;
 }
@@ -43,7 +44,21 @@ body {
   cursor: pointer;
   text-transform: capitalize;
 }
-
+/* Header button CSS */
+.login_button {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.login_button:hover {
+  background-color: #333;
+  color: whitesmoke;
+}
 /* Main CSS */
 .main,
 .restaurants_Card_Container {

@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { APP_LOGO } from "../utils/constants";
 
 const Header = () => {
+  // let btnData = "login";
+  const [buttonInnerData, setButtonInnerData] = useState("login");
+
   return (
     <header className="header">
       <div className="logo_Container">
@@ -13,6 +17,16 @@ const Header = () => {
           <li>Help</li>
           <li>sign in</li>
           <li>cart</li>
+          <button
+            className="login_button"
+            onClick={() => {
+              buttonInnerData === "login"
+                ? setButtonInnerData("logout")
+                : setButtonInnerData("login");
+            }}
+          >
+            {buttonInnerData}
+          </button>
         </ul>
       </nav>
     </header>
