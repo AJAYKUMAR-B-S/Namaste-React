@@ -52,6 +52,7 @@ const Main = () => {
         </button>
       </div>
       <div className="restaurants_Card_Container">
+        {/* //Conditional Rendering */}
         {apiData.length === 0 ? (
           <Shimmer />
         ) : (
