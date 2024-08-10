@@ -22,8 +22,6 @@ body {
   box-shadow: 1px 1px 8px -3px #000;
 }
 .logo_Container {
-  width: 5.5rem;
-  border-radius: 50%;
   overflow: hidden;
 }
 .header_logo {
@@ -60,9 +58,16 @@ body {
   color: whitesmoke;
 }
 /* Main CSS */
-.main,
-.restaurants_Card_Container {
-  padding: 2rem 2rem;
+.main {
+  display: grid;
+  gap: 1rem;
+  padding: 4rem 2rem;
+}
+
+.restaurants_Card_Filter_Container {
+  padding: 1rem 2rem;
+  display: grid;
+  gap: 1rem;
 }
 .restaurants_Card_Container {
   display: flex;
@@ -71,10 +76,9 @@ body {
 }
 .restaurant_Card {
   width: 15rem;
+  height: 25rem;
   border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
   box-shadow: 1px 1px 8px -3px #b7b3b3;
   cursor: pointer;
   overflow: hidden;
@@ -82,8 +86,8 @@ body {
 }
 .restaurant_Card_Img_Container {
   box-shadow: 0 1px 1px -2px rgba(0, 0, 0, 0.1);
-  height: 50%;
   overflow: hidden;
+  height: 14rem;
 }
 .recipeImage {
   width: 100%;
@@ -91,11 +95,21 @@ body {
   object-fit: cover;
 }
 .restaurant_Card_Details_Container {
-  display: grid;
-  gap: 0.1rem;
-  padding: 1rem;
-  height: 50%;
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
+.restaurant_Card_Details_Container h3 {
+  font-size: 1rem;
+}
+.star_Para {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+/* Filter CSS */
 .restaurant_Card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 7px -1px rgba(0, 0, 0, 0.3);
@@ -105,17 +119,19 @@ body {
   gap: 1rem;
 }
 .filter_button {
-  padding: 0.4rem;
+  padding: 0.6rem 1rem;
   border: none;
   cursor: pointer;
   text-transform: capitalize;
   box-shadow: 0 1px 1px -2px rgba(0, 0, 0, 0.1);
-  border-radius: 1px;
-  transition: all 0.3s;
+  border-radius: 7px;
+  font-weight: 600;
+  color: #787575;
+  transition: all 0.6s;
 }
 .filter_button:hover {
-  font-weight: 700;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  background-color: black;
+  color: whitesmoke;
 }
 
 /* Shimmer CSS */
@@ -124,10 +140,49 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: space-between;
 }
 .shimmer_animation_Container {
   width: 15rem;
-  height: 400px;
-  border-radius: 4px;
+  height: 300px;
+  border-radius: 5px;
   background-color: #f0f0f0;
+}
+
+/* Search Box Css */
+.searching_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search_Box_Div {
+  width: 40%;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.search_Input {
+  width: 100%;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  border: none;
+  color: #343333;
+  background-color: #f0f0f0;
+}
+.search_Input::placeholder {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #a3a2a2;
+}
+.search_Input:focus {
+  outline: none;
+  border: none;
+}
+.search_Icon {
+  font-size: 1.5rem;
+  color: #c1bcbc;
+  cursor: pointer;
 }
