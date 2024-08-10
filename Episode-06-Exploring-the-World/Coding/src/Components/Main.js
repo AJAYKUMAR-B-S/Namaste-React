@@ -1,9 +1,8 @@
-import SWIGGY_MOCK_API_DATA from "../utils/swiggyMockApiData";
 import Restaurantcard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 
 const Main = () => {
-  const [apiData, setapiData] = useState(SWIGGY_MOCK_API_DATA);
+  const [apiData, setapiData] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -39,7 +38,7 @@ const Main = () => {
         <button
           className="filter_button"
           onClick={() => {
-            setapiData(SWIGGY_MOCK_API_DATA);
+            setapiData(apiData);
           }}
         >
           All Restaurant
