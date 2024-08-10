@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { APP_LOGO } from "../utils/constants";
+import logo from "../Assets/Logo.png";
 
 const Header = () => {
   // let btnData = "login";
@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo_Container">
-        <img alt="Website Logo" className="header_logo" src={APP_LOGO}></img>
+        <img alt="Website Logo" className="header_logo" src={logo}></img>
       </div>
       <nav className="nav_Container">
         <ul className="nav_Container_Ul">
