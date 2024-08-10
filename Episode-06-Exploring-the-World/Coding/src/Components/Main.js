@@ -1,5 +1,6 @@
 import Restaurantcard from "./RestaurantCard";
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer.js";
 
 const Main = () => {
   const [apiData, setapiData] = useState([]);
@@ -19,6 +20,12 @@ const Main = () => {
       toJson.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
     );
   };
+
+  //Conditional Rendering
+
+  // if (apiData.length === 0) {
+  //   return <Shimmer />;
+  // }
 
   return (
     <main className="main">
@@ -45,11 +52,15 @@ const Main = () => {
         </button>
       </div>
       <div className="restaurants_Card_Container">
-        {apiData.map((data) => {
-          return (
-            <Restaurantcard key={data.info.id} restaurantData={data.info} />
-          );
-        })}
+        {apiData.length === 0 ? (
+          <Shimmer />
+        ) : (
+          apiData.map((data) => {
+            return (
+              <Restaurantcard key={data.info.id} restaurantData={data.info} />
+            );
+          })
+        )}
       </div>
     </main>
   );
