@@ -1,4 +1,5 @@
 import { RESTAURANT_CARD_IMG_CDN_URL } from "../utils/constants";
+import { TiStarFullOutline } from "react-icons/ti";
 
 const Restaurantcard = (props) => {
   const { restaurantData } = props;
@@ -14,7 +15,10 @@ const Restaurantcard = (props) => {
       </div>
       <div className="restaurant_Card_Details_Container">
         <h3>{restaurantData.name}</h3>
-        <p>⭐ {restaurantData.avgRating}</p>
+        <p className="star_Para">
+          <TiStarFullOutline />
+          {restaurantData.avgRating}
+        </p>
         <p>{restaurantData.costForTwo}</p>
         <p>{restaurantData.cuisines.join(",  ")}</p>
       </div>
