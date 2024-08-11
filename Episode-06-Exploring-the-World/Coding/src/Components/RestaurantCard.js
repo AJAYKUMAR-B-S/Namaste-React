@@ -20,7 +20,11 @@ const Restaurantcard = (props) => {
           {restaurantData.avgRating}
         </p>
         <p>{restaurantData.costForTwo}</p>
-        <p>{restaurantData.cuisines.join(",  ")}</p>
+        <p>
+          {restaurantData.cuisines.length > 3
+            ? restaurantData.cuisines.slice(0, 4).join(", ") + ",..."
+            : restaurantData.cuisines.join(", ")}
+        </p>
       </div>
     </div>
   );
