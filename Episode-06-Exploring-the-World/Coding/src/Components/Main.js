@@ -1,3 +1,4 @@
+import { API_URL } from "../utils/constants.js";
 import Restaurantcard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer.js";
@@ -6,18 +7,25 @@ import { FaSearch } from "react-icons/fa";
 const Main = () => {
   const [apiData, setapiData] = useState([]);
 
+  const [filteredAPIData, setFilteredAPIData] = useState([]);
+
+  const [searchText, setSearchText] = useState("");
+
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+    const data = await fetch(API_URL);
     const toJson = await data.json();
     setapiData(
-      toJson.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+      toJson.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
     );
+
+    setFilteredAPIData(
+      toJson.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+    );
+    console.log(toJson);
   };
 
   return (
@@ -28,8 +36,23 @@ const Main = () => {
             type="text"
             className="search_Input"
             placeholder="search for restaurant and food"
+            value={searchText}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+              console.log(searchText);
+            }}
           ></input>
-          <FaSearch className="search_Icon" />
+          <FaSearch
+            className="search_Icon"
+            onClick={() => {
+              let filteredRestaurant = apiData.filter((data) =>
+                data.info.name
+                  .toLocaleLowerCase()
+                  .includes(searchText.toLocaleLowerCase().trim())
+              );
+              setFilteredAPIData(filteredRestaurant);
+            }}
+          />
         </div>
       </div>
       <div className="restaurants_Card_Filter_Container">
@@ -37,10 +60,11 @@ const Main = () => {
           <button
             className="filter_button"
             onClick={() => {
-              const filterApiData = apiData.filter(
-                (data) => data.info.avgRating > 4.3
+              const filterApiData = filteredAPIData.filter(
+                (data) => data.info.avgRating > 4.5
               );
-              setapiData(filterApiData);
+              setFilteredAPIData(filterApiData);
+              setSearchText("");
             }}
           >
             Top rated
@@ -48,7 +72,8 @@ const Main = () => {
           <button
             className="filter_button"
             onClick={() => {
-              fetchData();
+              setFilteredAPIData(apiData);
+              setSearchText("");
             }}
           >
             All
@@ -59,7 +84,7 @@ const Main = () => {
           {apiData.length === 0 ? (
             <Shimmer />
           ) : (
-            apiData.map((data) => {
+            filteredAPIData.map((data) => {
               return (
                 <Restaurantcard key={data.info.id} restaurantData={data.info} />
               );
