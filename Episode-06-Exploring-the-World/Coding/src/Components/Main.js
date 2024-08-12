@@ -1,7 +1,7 @@
 import { API_URL } from "../utils/constants.js";
 import Restaurantcard from "./RestaurantCard";
 import { useState, useEffect } from "react";
-import Shimmer from "./Shimmer.js";
+import { Shimmer, NoResultFoundCard } from "./Shimmer.js";
 import { FaSearch } from "react-icons/fa";
 
 const Main = () => {
@@ -10,6 +10,8 @@ const Main = () => {
   const [filteredAPIData, setFilteredAPIData] = useState([]);
 
   const [searchText, setSearchText] = useState("");
+
+  const [DefaultComponent, setDefaultComponent] = useState(() => Shimmer);
 
   useEffect(() => {
     fetchData();
@@ -25,7 +27,6 @@ const Main = () => {
     setFilteredAPIData(
       toJson.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
     );
-    console.log(toJson);
   };
 
   return (
@@ -39,7 +40,6 @@ const Main = () => {
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
-              console.log(searchText);
             }}
           ></input>
           <FaSearch
@@ -51,6 +51,7 @@ const Main = () => {
                   .includes(searchText.toLocaleLowerCase().trim())
               );
               setFilteredAPIData(filteredRestaurant);
+              setDefaultComponent(() => NoResultFoundCard);
             }}
           />
         </div>
@@ -81,8 +82,8 @@ const Main = () => {
         </div>
         <div className="restaurants_Card_Container">
           {/* //Conditional Rendering */}
-          {apiData.length === 0 ? (
-            <Shimmer />
+          {filteredAPIData.length === 0 ? (
+            <DefaultComponent />
           ) : (
             filteredAPIData.map((data) => {
               return (
