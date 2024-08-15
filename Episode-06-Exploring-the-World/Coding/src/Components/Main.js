@@ -81,7 +81,9 @@ const Main = () => {
           </button>
         </div>
         <div className="restaurants_Card_Container">
+              
           {/* //Conditional Rendering */}
+  
           {filteredAPIData.length === 0 ? (
             <DefaultComponent />
           ) : (
