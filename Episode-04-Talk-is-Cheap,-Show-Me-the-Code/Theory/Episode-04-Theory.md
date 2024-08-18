@@ -62,9 +62,10 @@ A Fragment is simply an `empty element` that acts as a `container for other elem
 <img src="../Assets/Picture2.png" width="200" height="150" alt="Without Fragments Example">
 
 ## Q: What is `Reconciliation` in React?
-A: `Reconciliation` is the process through which React updates the Browser DOM and makes React work faster. React use a `diffing algorithm` so that component updates are predictable and faster. React would first calculate the difference between the real DOM and the copy of DOM (Virtual DOM) when there's an update of components.
-React stores a copy of Browser DOM which is called `Virtual DOM`. When we make changes or add data, React creates a new Virtual DOM and compares it with the previous one. Comparison is done by `Diffing Algorithm`.
-React compares the Virtual DOM with Real DOM. It finds out the changed nodes and updates only the changed nodes in Real DOM leaving the rest nodes as it is. This process is called Reconciliation.
+A: `Reconciliation` is the process by which React updates the `Virtual DOM` to reflect changes in the underlying data. It is a core concept in `React` and is used to efficiently update the `UI` when the `state` of a component changes.<br>
+- When a component’s `state` or `props` change, React `re-renders` the `component` and creates a `new virtual DOM representation`. Then, it `compares` the `new virtual DOM` with the `previous virtual DOM` to determine the minimum number of changes necessary to update the `actual DOM`. This process is known as `reconciliation`.<br>
+- React uses a fast and efficient `algorithm` to `compare` the `virtual DOM trees` and determine which parts of the `actual DOM` need to be updated. If a component’s `state` or `props` haven’t changed, React can simply `reuse` the previous virtual DOM tree, rather than creating a new one from scratch. This results in `faster updates` and `better performance`.
+
 
 ## Q: What is `React Fiber`?
 
