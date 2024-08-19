@@ -1,6 +1,6 @@
 ## Namaste React 🚀 Course by Akshay Saini
 
-# Chapter-07-Finding-the-Path
+# Episode-07-Finding-the-Path
 
 ## Coding Assignment:
 
