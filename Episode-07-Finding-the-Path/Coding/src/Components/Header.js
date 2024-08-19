@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../Assets/Logo.png";
+import logo from "../../../../public/Images/Logo.png";
 
 const Header = () => {
   // let btnData = "login";
