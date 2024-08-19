@@ -62,19 +62,17 @@ A Fragment is simply an `empty element` that acts as a `container for other elem
 <img src="../Assets/Picture2.png" width="200" height="150" alt="Without Fragments Example">
 
 ## Q: What is `Reconciliation` in React?
-A: `Reconciliation` is the process through which React updates the Browser DOM and makes React work faster. React use a `diffing algorithm` so that component updates are predictable and faster. React would first calculate the difference between the real DOM and the copy of DOM (Virtual DOM) when there's an update of components.
-React stores a copy of Browser DOM which is called `Virtual DOM`. When we make changes or add data, React creates a new Virtual DOM and compares it with the previous one. Comparison is done by `Diffing Algorithm`.
-React compares the Virtual DOM with Real DOM. It finds out the changed nodes and updates only the changed nodes in Real DOM leaving the rest nodes as it is. This process is called Reconciliation.
+A: `Reconciliation` is the process by which React updates the `Virtual DOM` to reflect changes in the underlying data. It is a core concept in `React` and is used to efficiently update the `UI` when the `state` of a component changes.<br>
+- When a component’s `state` or `props` change, React `re-renders` the `component` and creates a `new virtual DOM representation`. Then, it `compares` the `new virtual DOM` with the `previous virtual DOM` to determine the minimum number of changes necessary to update the `actual DOM`. This process is known as `reconciliation`.<br>
+- React uses a fast and efficient `algorithm` to `compare` the `virtual DOM trees` and determine which parts of the `actual DOM` need to be updated. If a component’s `state` or `props` haven’t changed, React can simply `reuse` the previous virtual DOM tree, rather than creating a new one from scratch. This results in `faster updates` and `better performance`.
+
 
 ## Q: What is `React Fiber`?
 
-A: React Fiber is a concept of ReactJS that is used to render a system faster, smoother and smarter.
-The Fiber reconciler, which became the default reconciler for React 16 and above, is a complete rewrite of React’s reconciliation algorithm to solve some long-standing issues in React.
-Because Fiber is asynchronous, React can:
+A: The `React Fiber data structure (RFDS)` is an internal representation of the React `component tree` that allows React to efficiently `update` and `render` components. It was introduced in `React 16` as a new `reconciliation algorithm` to replace the old `stack-based algorithm` used in previous versions of React.
+- The `data structure` is a `linked list of fiber nodes`, where each `node` represents a `component` or an `element in the component tree`. The fiber nodes contain information about the `component` or `element`, such as the component `type`, `props`, `state`, etc.
+- The `fiber nodes` are organized in a `tree structure` that reflects the hierarchical structure of the component tree. Each fiber node has a `parent fiber node` and a linked list of `child fiber nodes`. The `child fiber nodes` are ordered in the same order as their corresponding children in the `component tree`.
 
-- Pause, resume, and restart rendering work on components as new updates come in
-- Reuse previously completed work and even abort it if not needed
-- Split work into chunks and prioritize tasks based on importance
 
 ## Q: Why do we need `keys` in React?
 
