@@ -1,5 +1,6 @@
-import { useState,useEffect} from "react";
+import { useState, useEffect } from "react";
 import logo from "../../../../public/Images/Logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // let btnData = "login";
@@ -12,8 +13,15 @@ const Header = () => {
       </div>
       <nav className="nav_Container">
         <ul className="nav_Container_Ul">
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
           <li>Help</li>
           <li>sign in</li>
           <li>cart</li>
