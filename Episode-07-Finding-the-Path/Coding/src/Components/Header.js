@@ -14,13 +14,17 @@ const Header = () => {
       <nav className="nav_Container">
         <ul className="nav_Container_Ul">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" preventScrollReset={true}>
+              Home
+            </Link>
           </li>
           <li>
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="contact" replace>
+              Contact
+            </Link>
           </li>
           <li>Help</li>
           <li>sign in</li>
