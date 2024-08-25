@@ -2,6 +2,13 @@
 
 # Episode-07-Finding-the-Path
 
+## Q: What would happen if we do `console.log(useState())`?
+
+A:The `useState hook` would be called and return an `array`.
+
+- The first element `(undefined)`: This is the `initial state value`. It's `undefined` if we didn't provide an initial value to useState().
+- The second element `(displayed as ƒ)`: This is the `state updating function`. It's shown as `ƒ` in the `console` to indicate it's a `function`.
+
 ## Q: What is `SPA`?
 
 A: A `Single Page Application (SPA)` is a type of web application that `loads` and `updates` content dynamically `without refreshing the entire page`. Unlike traditional websites, SPAs use modern technologies to enhance the `user experience` by minimizing interruptions and providing a smoother interface. Users can interact with the application seamlessly, similar to using desktop software. The main advantage is the elimination of `full-page reload`s, resulting in a more responsive and engaging web experience. This is achieved by ensuring that the browser obtains all essential `HTML`, `JavaScript`, and `CSS` codes in one request or updates the necessary content based on user actions.
