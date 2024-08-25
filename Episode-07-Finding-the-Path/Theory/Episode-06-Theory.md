@@ -18,6 +18,8 @@ A: `Server-side routing` is the traditional approach used in web applications. I
 - `Server Sends Response`: The server sends a complete `HTML page` back to the browser.
 - `Browser Reloads`: The `browser reloads` and displays the new page, along with any new CSS and JavaScript files.
 
+<br><br>
+
 In `Client-side routing` is commonly used in modern `Single Page Applications (SPAs)`. In this approach, the `entire application` is loaded upfront, and `JavaScript` manages the navigation between different `views` or `pages` without making full `requests` to the `server` for new HTML. The browser URL changes, but the server isn't involved in loading new pages—instead, the `JavaScript code` running in the browser handles the navigation and dynamically updates the content.
 
 ### How Client-Side Routing Works:
