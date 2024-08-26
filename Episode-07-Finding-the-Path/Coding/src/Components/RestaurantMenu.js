@@ -14,7 +14,7 @@ const RestaurantMenu = () => {
   };
   return (
     <div className="restaurantMenu_Container">
-      <h1>This is restaurantMenu Page</h1>
+      <h1>This is Restaurant Menu Item page</h1>
     </div>
   );
 };
