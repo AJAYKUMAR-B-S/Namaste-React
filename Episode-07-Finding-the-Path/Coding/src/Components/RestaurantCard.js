@@ -3,6 +3,8 @@ import { TiStarFullOutline } from "react-icons/ti";
 
 const Restaurantcard = (props) => {
   const { restaurantData } = props;
+  
+  console.log("hello");
 
   return (
     <div className="restaurant_Card">
