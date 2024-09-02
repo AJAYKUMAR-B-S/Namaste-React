@@ -28,6 +28,5 @@
 - Make `Search functionality` work.
 - Make a `Login Logout` button that `toggles with a state`.
 
-## References:
 
 
