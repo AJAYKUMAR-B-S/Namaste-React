@@ -1,2 +1,2 @@
 # 🙏 **Namaste React** 🚀
- ### Namaste React Course🚀 by Akshay Saini. This repository contains Codes, Assignmenst, Assignment Solution & Own Notes 📚
+ ### Namaste React Course 🚀 by Akshay Saini. It contains code, assignments, assignment solutions, and personal notes 📚.
