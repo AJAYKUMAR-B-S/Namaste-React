@@ -6,4 +6,4 @@
  
  **This repository offers a collection of code samples, assignments solutions, and personal notes designed to deepen your understanding of React.js concepts.**
 
-## 📚 [_Episode 01 - Inception_](./)
+## 📚 [_Episode 01 - Inception_](./Episode-01--Inception)
