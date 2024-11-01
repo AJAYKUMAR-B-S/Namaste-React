@@ -26,3 +26,6 @@
 
 ➡️ ***Code: -***
   - 👨‍💻 [Code_Link](./Episode-01--Inception/Coding)
+    
+➡️ ***Assignment Solution: -***
+ - 📘 [Assignment_Solution_Link](./Episode-01--Inception/)
