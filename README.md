@@ -8,12 +8,12 @@
 
 ## 📚 [_Episode 01 - Inception_](./Episode-01--Inception)
 
- ➡️  ***Topics Covered:***
+ ➡️  ***Topics Covered: -***
  - Emmet, CDN
  - Hello World using HTML/JavaScript
  - Hello World in React
    
-➡️  ***Assignments***
+➡️  ***Assignments: -***
 
 - What is `Emmet`?
 - Difference between a `Library` and `Framework`?
@@ -23,3 +23,6 @@
 - What is difference between `React` and `ReactDOM`?
 - What is difference between `react.development.js` and `react.production.js` files via CDN?
 - What is `async` and `defer`?
+
+➡️ ***Code: -***
+  - 👨‍💻 [Code_Link](./)
