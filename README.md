@@ -28,4 +28,7 @@
   - 👨‍💻 [Code_Link](./Episode-01--Inception/Coding)
     
 ➡️ ***Assignment Solution: -***
- - 📘 [Assignment_Solution_Link](./Episode-01--Inception/)
+ - 📘 [Assignment_Solution_Link](./Episode-01--Inception/Theory/Episode-01-Theory.md)
+
+➡️ ***Detailed Notes in My Own Words: -***
+- 📘 [Notes_Link]()
