@@ -66,4 +66,7 @@ own words.
 - Read about `Script types in html` (MDN Docs)
 
 ➡️ ***Code: -***
-  - 👨‍💻 [Code_Link](./Episode-02--Ignitin-our-App/Coding)
+  - 👨‍💻 [Code_Link](./Episode-02--Igniting-our-APP/Coding)
+
+➡️ ***Assignment Solution: -***
+ - 📘 [Assignment_Solution_Link](./Episode-01--Inception/Theory/Episode-01-Theory.md)
