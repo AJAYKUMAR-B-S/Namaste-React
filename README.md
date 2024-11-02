@@ -31,8 +31,9 @@
  - 📘 [Assignment_Solution_Link](./Episode-01--Inception/Theory/Episode-01-Theory.md)
 
 ➡️ ***Detailed Notes of My Own: -***
-- 📘 [Notes_Link](./Episode-02--Igniting-our-APP/Theory/Episode-02_Detailed_Notes_In_PDF/Namaste_React_Episode_2_Igniting-our-APP.pdf)
+- 📘 [Link to Episode 01 PDF Notes](./Episode-02--Igniting-our-APP/Theory/Episode-02_Detailed_Notes_In_PDF/Namaste_React_Episode_2_Igniting-our-APP.pdf)
 - ---
+
 ## 📚 [_Episode 02 - Igniting our App_](./Episode-02--Igniting-our-APP)
 
  ➡️  ***Topics Covered: -***
@@ -70,3 +71,7 @@ own words.
 
 ➡️ ***Assignment Solution: -***
  - 📘 [Assignment_Solution_Link](./Episode-02--Igniting-our-APP/Theory/Episode-02-Theory.md)
+
+➡️ ***Detailed Notes of My Own: -***
+- 📘 [Link to Episode 02 PDF Notes](./Episode-02--Igniting-our-APP/Theory/Episode-02_Detailed_Notes_In_PDF/Namaste_React_Episode_2_Igniting-our-APP.pdf)
+- ---
