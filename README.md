@@ -69,4 +69,4 @@ own words.
   - 👨‍💻 [Code_Link](./Episode-02--Igniting-our-APP/Coding)
 
 ➡️ ***Assignment Solution: -***
- - 📘 [Assignment_Solution_Link](./Episode-01--Inception/Theory/Episode-01-Theory.md)
+ - 📘 [Assignment_Solution_Link](./Episode-02--Igniting-our-APP/Theory/Episode-02-Theory.md)
