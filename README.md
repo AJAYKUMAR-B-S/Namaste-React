@@ -31,4 +31,4 @@
  - 📘 [Assignment_Solution_Link](./Episode-01--Inception/Theory/Episode-01-Theory.md)
 
 ➡️ ***Detailed Notes of My Own: -***
-- 📘 [Notes_Link](./Episode-02--Igniting-our-APP/Theory/Episode-02_Detailed_Notes_In_PDF)
+- 📘 [Notes_Link](./Episode-02--Igniting-our-APP/Theory/Episode-02_Detailed_Notes_In_PDF/Namaste_React_Episode_2_Igniting-our-APP.pdf)
