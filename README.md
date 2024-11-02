@@ -32,3 +32,14 @@
 
 ➡️ ***Detailed Notes of My Own: -***
 - 📘 [Notes_Link](./Episode-02--Igniting-our-APP/Theory/Episode-02_Detailed_Notes_In_PDF/Namaste_React_Episode_2_Igniting-our-APP.pdf)
+- ---
+## 📚 [_Episode 02 - Igniting our App_]()
+
+ ➡️  ***Topics Covered: -***
+
+ - NPM
+ - Bundler
+ - parcel
+ - Node Modules
+ - Bable
+ - Browserlists
