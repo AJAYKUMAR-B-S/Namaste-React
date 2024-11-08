@@ -6,7 +6,7 @@
  
  **This repository offers a collection of code samples, assignments solutions, and personal notes designed to deepen your understanding of React.js concepts.**
 
-## 📚 [_Episode 01 - Inception_](./Episode-01--Inception)
+## 📚 ***[Episode-01--Inception](./Episode-01--Inception)***
 
  ➡️  ***Topics Covered: -***
  - Emmet, CDN
@@ -34,7 +34,7 @@
 - 📘 [Link to Episode 01 PDF Notes](./Episode-01--Inception/Theory/Episode-01_Detailed_Notes_In_PDF/Namaste_React_Episode_1_Inception.pdf)
 - ---
 
-## 📚 [_Episode 02 - Igniting our App_](./Episode-02--Igniting-our-APP)
+## 📚 ***[Episode-02--Igniting-our-APP](./Episode-02--Igniting-our-APP)***
 
  ➡️  ***Topics Covered: -***
 
@@ -75,3 +75,5 @@ own words.
 ➡️ ***Detailed Notes of My Own: -***
 - 📘 [Link to Episode 02 PDF Notes](./Episode-02--Igniting-our-APP/Theory/Episode-02_Detailed_Notes_In_PDF/Namaste_React_Episode_2_Igniting-our-APP.pdf)
 - ---
+
+## 📚 ***[Episode-03-Laying-the-foundation](./Episode-03-Laying-the-foundation)***
