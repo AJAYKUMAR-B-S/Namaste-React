@@ -109,4 +109,8 @@ own words.
 ➡️ ***Assignment Solution: -***
  - 📘 [Assignment_Solution_Link](./Episode-03-Laying-the-foundation/Theory/Episode-03-Theory.md)
 
+➡️ ***Detailed Notes of My Own: -***
+- 📘 [Link to Episode 03 PDF Notes](./Episode-03-Laying-the-foundation/Theory/Episode-03_Detailed_Notes_In_PDF/Namaste_React_Episode_3_Laying_the_foundation_PDF.pdf)
+- ---
+
 
