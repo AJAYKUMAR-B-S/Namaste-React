@@ -100,3 +100,4 @@ own words.
 - `Components`
 - `Functional Components`
 - `Composing Components`
+- `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`
