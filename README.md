@@ -77,3 +77,12 @@ own words.
 - ---
 
 ## 📚 ***[Episode-03-Laying-the-foundation](./Episode-03-Laying-the-foundation)***
+
+ ➡️  ***Topics Covered: -***
+ 
+- JSX
+- Babel
+- React Components
+   - ClassBased Components
+   - Functional Components
+- Component Composition
