@@ -81,8 +81,12 @@ own words.
  ➡️  ***Topics Covered: -***
  
 - JSX
-- Babel
-- React Components
-   - ClassBased Components
-   - Functional Components
-- Component Composition
+   -  `React.createElement` vs `JSX`
+   -  Benefits of `JSX`
+   -  Behind the Scenes of `JSX`
+   -  `Babel` & `parcel` role in `JSX`
+- `Babel`
+- `React Components`
+   - `ClassBased Components`
+   - `Functional Components`
+- `Component Composition`
