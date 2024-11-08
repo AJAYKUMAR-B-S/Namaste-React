@@ -101,3 +101,8 @@ own words.
 - `Functional Components`
 - `Composing Components`
 - `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`
+
+➡️ ***Assignment Solution: -***
+ - 📘 [Assignment_Solution_Link](./Episode-03-Laying-the-foundation/Theory/Episode-03-Theory.md)
+
+
