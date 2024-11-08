@@ -102,6 +102,10 @@ own words.
 - `Composing Components`
 - `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`
 
+➡️ ***Code: -***
+  - 👨‍💻 [Code_Link](./Episode-03-Laying-the-foundation/Coding)
+
+
 ➡️ ***Assignment Solution: -***
  - 📘 [Assignment_Solution_Link](./Episode-03-Laying-the-foundation/Theory/Episode-03-Theory.md)
 
