@@ -135,3 +135,6 @@ own words.
 - Can we use `index as keys` in React?
 - What is `props` in React? Ways to.
 - What is `Config Driven UI`?
+
+➡️ ***Code: -***
+  - 👨‍💻 [Code_Link](./Episode-04-Talk-is-Cheap-Show-Me-the-Code/Coding)
