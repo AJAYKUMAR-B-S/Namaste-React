@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import swiggyApiData from "./dummySwiggyApi";
+import RESTAURANT_MOCK_DATA from "./dummySwiggyAPI.js";
+
+console.log(
+  RESTAURANT_MOCK_DATA.card.card.gridElements.infoWithStyle.restaurants
+);
 // Headers
 //   website logo
 //    Nav Bar
@@ -33,7 +37,7 @@ const Header = () => {
         <img
           alt="Website Logo"
           className="header_logo"
-          src="https://img.freepik.com/free-vector/food-shopping-logo-template-design_460848-10299.jpg?size=626&ext=jpg&ga=GA1.1.1518270500.1717113600&semt=ais_user"
+          src="https://img.freepik.com/free-vector/food-drink-hand-drawn-flat-healthy-food-logo_23-2149632253.jpg?semt=ais_hybrid"
         ></img>
       </div>
       <nav className="nav_Container">
@@ -103,18 +107,18 @@ const Main = () => {
   return (
     <main className="main">
       <div className="search_Container">
-        <span>Search : </span>
         <input type="text" placeholder="Search for food" />
+        <button>Search</button>
       </div>
       <div className="restaurants_Card_Container">
-        {swiggyApiData.map((data) => {
-          return (
-            <Restaurantcard
-              key={data.card.card.info.id}
-              restaurantData={data.card.card.info}
-            />
-          );
-        })}
+        {RESTAURANT_MOCK_DATA.card.card.gridElements.infoWithStyle.restaurants.map(
+          (data) => {
+            console.log(data);
+            return (
+              <Restaurantcard key={data.info.id} restaurantData={data.info} />
+            );
+          }
+        )}
       </div>
     </main>
   );
