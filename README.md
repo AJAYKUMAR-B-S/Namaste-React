@@ -115,3 +115,10 @@ own words.
 
 
 ## 📚 ***[Episode-04-Talk-is-Cheap-Show-Me-the-Code](./Episode-04-Talk-is-Cheap-Show-Me-the-Code)***
+
+ ➡️  ***Topics Covered: -***
+ 
+- React app building
+- Props
+- Config Driven UI
+-  Unique Key 
