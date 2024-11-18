@@ -138,3 +138,6 @@ own words.
 
 ➡️ ***Code: -***
   - 👨‍💻 [Code_Link](./Episode-04-Talk-is-Cheap-Show-Me-the-Code/Coding)
+
+➡️ ***Assignment Solution: -***
+ - 📘 [Assignment_Solution_Link](./Episode-04-Talk-is-Cheap-Show-Me-the-Code/Theory/Episode-04-Theory.md)
