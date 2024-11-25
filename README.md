@@ -114,3 +114,35 @@ own words.
 - ---
 
 
+## 📚 ***[Episode-04-Talk-is-Cheap-Show-Me-the-Code](./Episode-04-Talk-is-Cheap-Show-Me-the-Code)***
+
+ ➡️  ***Topics Covered: -***
+ 
+- React app building
+- Props
+- Config Driven UI
+- Keys
+  
+➡️  ***Assignments: -***
+- Is `JSX` mandatory for React?
+- Is `ES6` mandatory for React?
+- `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in JSX.
+- How can I write `comments in JSX`?
+- What is `<React.Fragment></React.Fragment>` and `<></>`?
+- What is `Reconciliation` in React?
+- What is `React Fiber`?
+- Why do we need `keys` in React?
+- Can we use `index as keys` in React?
+- What is `props` in React? Ways to.
+- What is `Config Driven UI`?
+
+➡️ ***Code: -***
+  - 👨‍💻 [Code_Link](./Episode-04-Talk-is-Cheap-Show-Me-the-Code/Coding)
+
+➡️ ***Assignment Solution: -***
+ - 📘 [Assignment_Solution_Link](./Episode-04-Talk-is-Cheap-Show-Me-the-Code/Theory/Episode-04-Theory.md)
+
+➡️ ***Detailed Notes of My Own: -***
+- 📘 [Notes are updating](./)
+
+➡️ ***[Live Link of Food order App Project 🚀](https://episode04-food-order-website-progress.netlify.app/)***
