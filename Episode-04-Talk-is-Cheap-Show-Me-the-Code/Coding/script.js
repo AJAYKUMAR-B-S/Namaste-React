@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import RESTAURANT_MOCK_DATA from "./dummySwiggyAPI.js";
+import { MdCancel } from "react-icons/md";
 
 console.log(
   RESTAURANT_MOCK_DATA.card.card.gridElements.infoWithStyle.restaurants
@@ -124,10 +125,21 @@ const Main = () => {
   );
 };
 
+const ResponsivenessAlertComponent = () => {
+  return (
+    <div className="blurContainer">
+      <div className="responsivenessAlertContainer">
+        <MdCancel size={34} className="responsivenessAlertIcon" />
+        <h3>This site is not responsive it is currently under development.</h3>
+      </div>
+    </div>
+  );
+};
 //App Component
 const App = () => {
   return (
     <div className="app_layout">
+      <ResponsivenessAlertComponent />
       <Header />
       <Main />
     </div>
