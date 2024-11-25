@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Lato", sans-serif;
+  position: relative;
 }
 
 /* Header css */
@@ -103,4 +104,40 @@ body {
 .restaurant_Card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 7px -1px rgba(0, 0, 0, 0.3);
+  z-index: 800;
+}
+
+/* ResponsivenessAlertComponent CSS */
+.responsivenessAlertContainer {
+  width: 25%;
+  background-color: #d8d6d6;
+  padding: 2rem 3rem;
+  color: #4e4a4a;
+  text-transform: capitalize;
+  position: absolute;
+  top: -4%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.responsivenessAlertIcon {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 1000;
+  cursor: pointer;
+}
+.hideAlert {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .responsivenessAlertContainer {
+    width: 70%;
+    padding: 1.5rem 1.8rem;
+    font-size: 14px;
+    top: 10%;
+    right: 53%;
+  }
 }
